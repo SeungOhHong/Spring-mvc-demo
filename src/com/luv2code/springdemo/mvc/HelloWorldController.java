@@ -5,6 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
 public class HelloWorldController {
@@ -33,6 +34,21 @@ public class HelloWorldController {
 		theName = theName.toUpperCase();
 		// 메시지 생성
 		String result = "Hi! " + theName;
+		// 메세지를 모델에 추가하기 ( 이름 , 값)
+		model.addAttribute("message",result);
+		
+		
+		return "helloworld";
+	}
+	
+	@RequestMapping("/processFormV3")
+	public String processFormV3(
+			@RequestParam("studentName") String theName, Model model) {
+		
+		// 데이터를 모두 대문자로 변환
+		theName = theName.toUpperCase();
+		// 메시지 생성
+		String result = "Hi! My friend v3 " + theName;
 		// 메세지를 모델에 추가하기 ( 이름 , 값)
 		model.addAttribute("message",result);
 		
