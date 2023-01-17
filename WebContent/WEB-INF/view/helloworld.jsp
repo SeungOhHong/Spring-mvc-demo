@@ -8,6 +8,8 @@ Hello world of spring!
 
 Student name : ${param.studentName } 
 
+<!-- attribute name -->
+the message : ${message }
 </body>
 
 
