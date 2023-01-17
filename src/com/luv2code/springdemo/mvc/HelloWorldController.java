@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 @Controller
+@RequestMapping("/hello") // 부모 맵핑
 public class HelloWorldController {
 	
 	// HTML 폼을 보여주기 위한 컨트롤러 메서드
