@@ -13,6 +13,10 @@
 
 <a href = "student/showingForm">Student form</a>
 
+<br><br>
+
+<a href = "customer/showingForm">Customer form</a>
+
 </body>
 
 </html>
