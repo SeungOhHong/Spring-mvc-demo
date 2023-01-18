@@ -45,6 +45,15 @@
 	
 	<br><br>
 	
+	<!-- 제출 시 student.setOpatingSystems를 호출한다 -->
+	Operating Systems: 
+	
+	Linux <form:checkbox path="operatingSystems" value="Linux"/>
+	Mac OS <form:checkbox path="operatingSystems" value="Mac Os"/>
+	MS Windows <form:checkbox path="operatingSystems" value="MS windows"/>
+	
+	<br><br>
+	
 	<input type="submit" value = "Submit"/>
 	
 	</form:form>
