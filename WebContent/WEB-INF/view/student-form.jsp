@@ -5,7 +5,7 @@
 <html>
 <head>
 
-	<title>학생 등록 폼</title>
+	<title>student-form</title>
 
 
 </head>
@@ -34,6 +34,16 @@
 		
 	</form:select>
 	
+	<br><br>
+	Favorite Language: 
+	
+	Java: <form:radiobutton path="favoriteLanguage" value="java"/>
+	C#: <form:radiobutton path="favoriteLanguage" value="C#"/>
+	PHP: <form:radiobutton path="favoriteLanguage" value="PHP"/>
+	Ruby: <form:radiobutton path="favoriteLanguage" value="Ruby"/>
+	
+	
+	<br><br>
 	
 	<input type="submit" value = "Submit"/>
 	
