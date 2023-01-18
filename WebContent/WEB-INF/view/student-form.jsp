@@ -27,6 +27,14 @@
 	
 	<br><br>
 	
+	Country:
+	<form:select path="country">
+	
+		<form:options item="${student.countryOptions }"/>
+		
+	</form:select>
+	
+	
 	<input type="submit" value = "Submit"/>
 	
 	</form:form>
